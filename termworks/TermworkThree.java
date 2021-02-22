@@ -60,13 +60,6 @@ class MyBankAccount {
 		}
 	}
 	public void printDetails() {
-		/*System.out.println("Account Number : "+accNo);
-		System.out.println("Account Type : "+accType);
-		System.out.println("Account holder name : "+name);
-		System.out.println("Address : "+address);
-		System.out.println("Avaialble Balance : Rs."+accBalance+"/-");
-		System.out.println("Interest : Rs."+interest+"/-");
-		System.out.println("");*/
 		System.out.println(accNo+"\t"+accType+"\t"+name+"\t"+accBalance+"\t"+interest);
 	}
 }

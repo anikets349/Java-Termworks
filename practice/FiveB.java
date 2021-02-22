@@ -17,7 +17,6 @@ class ArrStack {
 			return;
 		}
 		this.arr[++this.arrTop] = ele;
-		System.out.println("element pushed in stack");
 	}
 	public int pop() {
 		int x = Integer.MIN_VALUE;
@@ -67,7 +66,6 @@ class LinkedStack extends ArrStack {
 			p.next = top;
 			top = p;
 		}
-		System.out.println("pushed");
 	}
 	public int pop() {
 		int x = Integer.MIN_VALUE;
@@ -93,19 +91,25 @@ class LinkedStack extends ArrStack {
 	}
 }
 
-public class Five {
+public class FiveB {
 	public static void main(String[] args) {
+		System.out.println("Stack implemented using an array.");
+		ArrStack arrStack  = new ArrStack(5);
+		arrStack.push(3);arrStack.push(4);arrStack.push(5);arrStack.push(6);
+		arrStack.display();
+		System.out.println(arrStack.pop());
+		System.out.println(arrStack.pop());
+		arrStack.display();
+		System.out.println("");
+		System.out.println("Stack implemented using linked list.");
 		LinkedStack stack = new LinkedStack(10);
-		stack.push(10);
-		stack.push(20);
-		stack.push(30);
+		stack.push(10);stack.push(20);stack.push(30);
 		stack.display();
 		System.out.println(stack.pop());
-		stack.pop();
-		stack.pop();
-		stack.pop();
-		stack.pop();
-		stack.pop();
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
 		stack.display();
 	}
 }

@@ -38,9 +38,9 @@ class FasterPrimeTester implements iPrime {
 class FastestPrimeTester implements iPrime {
 	public boolean isPrime(int n) {
 		int a=2;
-		if(Math.pow(a,n) - a % n ==0)
-			return false;
-		return true;
+		if(Math.pow(a,n-1)% n == 1)
+			return true;
+		return false;
 	}
 }
 

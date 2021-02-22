@@ -1,14 +1,13 @@
 package practice;
 import java.util.Scanner;
 
-
 public class OneA {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String[] brands = {"Maruti Suzuki","Hyundai","Tata Motors","Kia","BMW","Renault"};
 		String[] month = {"January","February","March","April","May","June","July",
 		"August","September","October","November","December"};
-		int[][] data = new int[2][12];
+		int[][] data = new int[6][12];
 		for(int i=0;i<data.length;i++) {
 			System.out.println("Enter data of "+brands[i]);
 			for(int j=0;j<data[0].length;j++) {
